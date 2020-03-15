@@ -1,25 +1,25 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
+    "target": "es5", // 编译后转换的目标es版本
+    "lib": [ // 加入要使用的环境
+      "dom", // 浏览器环境，可以使用window对象等
+      "dom.iterable", // 给dom原素伪数组加入迭代器，可以使用for of迭代
+      "esnext" // 可以在开发时使用的es版本
     ],
-    "allowJs": true,
+    "allowJs": true, // 是否允许在ts文件中导入js代码
     "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true, // 是否允许es6 module和node模块化标准混用
+    "allowSyntheticDefaultImports": true, // 是否允许使用默认导入
     "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react"
+    "forceConsistentCasingInFileNames": true, // 是否区分引入文件名大小写
+    "module": "esnext", // 使用最新模块化标准，运行动态导入模块
+    "moduleResolution": "node", // 使用node查找解析文件
+    "resolveJsonModule": true, // 是否允许导入json文件
+    "isolatedModules": true, // 是不是把每一个文件当做一个文件
+    "noEmit": true, // 编译后需不需要生成文件
+    "jsx": "react" // 解析jsx的方式
   },
-  "include": [
+  "include": [ // 处理那个文件夹下的ts文件
     "src"
   ]
 }
